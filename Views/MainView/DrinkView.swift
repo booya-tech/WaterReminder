@@ -16,6 +16,7 @@ struct DrinkView: View {
     var body: some View {
         
         ZStack {
+            
             // Background
             Rectangle()
                 .foregroundColor(Color("background"))
@@ -24,8 +25,10 @@ struct DrinkView: View {
             
             // Info
             HStack {
+                
                 // Amount
                 Text(String(drink.amount)+" mL")
+                
                 Spacer()
                 
                 // Type of drink
@@ -37,7 +40,8 @@ struct DrinkView: View {
                 
                 // Time entered
                 Text(DateHelper.getTimeString(time: drink.date))
-            }.padding(10)
+                
+            }.padding(8)
         }
     }
 }

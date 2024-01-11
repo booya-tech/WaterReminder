@@ -8,22 +8,29 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // existingIndex's picker
     @State var existingIndex: Int
     
+    // to update when the object's published properties change
     @ObservedObject var hydration: HydrationModel
     
+    // presentationMode property used to close the sheet
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         VStack(spacing: 10) {
             
+            // Title
             Text("Settings").font(.largeTitle).bold().padding(.top, 50)
             
+            // Title's Description
             Text("Set your goal:")
             
             Spacer()
             
+            // Picker fluid intake's amount, 2 buttons (Save Goal & Log to Health
             VStack {
+                
                 // Custom goal's number
                 Picker(selection: $existingIndex, label: Text("Picker"), content: {
                     ForEach(0..<42) { number in
@@ -33,7 +40,7 @@ struct SettingsView: View {
                 .pickerStyle(WheelPickerStyle())
                 .foregroundColor(.white)
                 
-                // Add & Save Intake Button
+                // Save Intake Button
                 Button(action: {
                     // See at HydrationModel.swift
                     hydration.saveGoal(index: existingIndex)

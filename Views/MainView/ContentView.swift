@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Application uses 2 models
     private var health: HealthModel
     private var hydration: HydrationModel
     

@@ -10,14 +10,19 @@ import HealthKit
 
 class HydrationModel: ObservableObject {
     
+    // Date
     @Published var date: Date
- 
+    
+    // Goal (mL)
     @Published var goal: Int
     
+    // Goal Index (corresponds to index used in SettingsView)
     @Published var goalIndex: Int
     
+    // Total intake (mL)
     @Published var totalIntake: Int
     
+    // Progress value (0.0 - 1.0)
     @Published var progress: Double
     
     // Intake entries (see WaterData.swift)
@@ -29,6 +34,9 @@ class HydrationModel: ObservableObject {
     }
     
     @Published var health: HealthModel
+    
+    // MARK: - Initializer
+    
     
     init(healthModel: HealthModel) {
         // Default values (male intake)
@@ -72,8 +80,8 @@ class HydrationModel: ObservableObject {
         
         self.updateData()
     }
-
-
+    
+    
     init(amounts: [Int]) {
         self.date = Date()
         self.goalIndex = Constants.defaultValues.goalIndex
@@ -87,7 +95,8 @@ class HydrationModel: ObservableObject {
             self.addIntake(amount: Double(amounts[i]), drink: 0)
         }
     }
-
+    
+    // MARK: - Model Functions
     
     // Save
     private func save() {
@@ -121,7 +130,7 @@ class HydrationModel: ObservableObject {
     
     // Calls updateTotal and updateProgress
     private func updateData() {
-        self.goal = self.goalIndex * Constants.Config.goalIncrement + Constants.Config.baseGoal
+        //        self.goal = self.goalIndex * Constants.Config.goalIncrement + Constants.Config.baseGoal
         self.updateTotal()
         self.updateProgress()
     }
@@ -143,6 +152,13 @@ class HydrationModel: ObservableObject {
         // Empty the intake
         self.intake = [WaterData]()
         self.updateData()
+    }
+    
+    func calculationNewGoal(gender: Int, weight: Int, active: Int, weather: Int) {
+        // Calulation New Goal (formula = weight*0.03+hot+active+base's intaking by genders)
+        self.goal = Int(Double(weight) * 0.03 * 1000) + active + weather + gender
+        updateData()
+        save()
     }
     
     func saveGoal(index: Int) {

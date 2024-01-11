@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+
 struct Constants {
     
     // Dummy model
@@ -19,6 +20,9 @@ struct Constants {
     // Drink type colors
     static let drinkColors = [Color.blue, Color("coffee"), Color.orange, Color.gray]
     
+//    Calculation Component (weight only has one value not the same as others including gender, activity, and weather)
+    static let weights = 30...400
+    
     // Configuration Constants
     struct Config {
         // UserDefaults Keys
@@ -27,7 +31,7 @@ struct Constants {
         static let goalKey = "goal"
         
         // Slider increments
-        static let intakeIncrementGesture = 2500
+        static let intakeIncrementGesture = 1000
         static let intakeIncrementSlider = 50
         static let goalIncrement = 100
         static let baseGoal = 2000
@@ -35,7 +39,6 @@ struct Constants {
     
     // Default values
     struct defaultValues {
-        
         // Default amounts for men's intake
         static let goalIndex = 17
         static let goal = goalIndex * Constants.Config.goalIncrement + Constants.Config.baseGoal

@@ -13,7 +13,7 @@
       "size" : "20x20"
     },
     {
-      "filename" : "29.png",
+      "filename" : "29 1.png",
       "idiom" : "iphone",
       "scale" : "1x",
       "size" : "29x29"
@@ -163,7 +163,7 @@
       "size" : "16x16"
     },
     {
-      "filename" : "32.png",
+      "filename" : "32 1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
@@ -187,7 +187,7 @@
       "size" : "128x128"
     },
     {
-      "filename" : "256.png",
+      "filename" : "256 1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
@@ -199,7 +199,7 @@
       "size" : "256x256"
     },
     {
-      "filename" : "512.png",
+      "filename" : "512 1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"

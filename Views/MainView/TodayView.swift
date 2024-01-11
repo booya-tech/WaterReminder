@@ -12,7 +12,9 @@ struct TodayView: View {
     // to update when the object's published properties change
     @ObservedObject var hydration: HydrationModel
     
-    // Sheet View
+    @State var path = NavigationPath()
+    
+    // 3 Sheet Views
     // Display addIntake view
     @State var addIntakeSheet = false
     // Display set a goal each day view
@@ -22,8 +24,9 @@ struct TodayView: View {
     
     var body: some View {
         
-        NavigationStack {
+        NavigationStack(path: $path) {
             VStack(spacing: 20) {
+                Spacer()
                 // Top Nav Bar - Setting & Info buttons
                 HStack {
                     
@@ -32,7 +35,7 @@ struct TodayView: View {
                             .resizable()
                             .frame(width: 25, height: 25)
                     }).sheet(isPresented: $settingsSheet, content: {
-                        SettingsView(existingIndex: 17, hydration: Constants.sampleModel)
+                        SettingsView(existingIndex: hydration.goalIndex, hydration: hydration)
                     })
                     
                     Spacer()
@@ -41,11 +44,11 @@ struct TodayView: View {
                         Image(systemName: "book.closed.fill")
                             .resizable()
                             .frame(width: 25, height: 30)
-                    }).sheet(isPresented: $infoSheet, content: {
-                        InfoView()
+                    }).fullScreenCover(isPresented: $infoSheet, content: {
+                        InfoView(hydration: hydration, infoSheet: $infoSheet)
                     })
                     
-                }.padding(.horizontal, 20)
+                }.padding(.horizontal, 30)
                 
                 // Date & Description
                 VStack {
@@ -84,9 +87,10 @@ struct TodayView: View {
                 Button(action: { addIntakeSheet.toggle() }, label: {
                     Image("addWater-btn")
                 })
-                .sheet(isPresented: $addIntakeSheet, content: {
-                    AddIntakeView(hydration: hydration)
+                .fullScreenCover(isPresented: $addIntakeSheet, content: {
+                    AddIntakeView(hydration: hydration, addIntakeSheet: $addIntakeSheet)
                 })
+                
                 Spacer()
             }
             .foregroundColor(.white)
@@ -95,7 +99,7 @@ struct TodayView: View {
             
         }
     }
-    // Delete function used by the list's built-int deletion
+    // The list's built-in deletion
     func delete(at offsets: IndexSet) {
         hydration.removeIntake(offset: offsets)
     }

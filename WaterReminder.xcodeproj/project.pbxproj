@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C000C7D62B22D25500E04AF0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000C7D52B22D25500E04AF0 /* Weather.swift */; };
 		C00A3CC52B0C5D8000626067 /* NerkoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C00A3CC32B0C5D8000626067 /* NerkoOne-Regular.ttf */; };
 		C00A3CCB2B0C620300626067 /* LaBelleAurore-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C00A3CCA2B0C620300626067 /* LaBelleAurore-Regular.ttf */; };
+		C01032832B21A8BA006DF1A1 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01032822B21A8BA006DF1A1 /* GenderView.swift */; };
+		C01032852B21A8C2006DF1A1 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01032842B21A8C2006DF1A1 /* WeightView.swift */; };
+		C01032872B21A8CC006DF1A1 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01032862B21A8CC006DF1A1 /* ActivityView.swift */; };
+		C01032892B21A8D5006DF1A1 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01032882B21A8D5006DF1A1 /* WeatherView.swift */; };
+		C01B2B792B3BD015008D4D79 /* ListRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01B2B782B3BD015008D4D79 /* ListRows.swift */; };
 		C033D09B2B032400004061D7 /* HydrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033D09A2B032400004061D7 /* HydrationModel.swift */; };
 		C035AD532AFC8E450021D02D /* WaterReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035AD522AFC8E450021D02D /* WaterReminderApp.swift */; };
 		C035AD552AFC8E450021D02D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035AD542AFC8E450021D02D /* ContentView.swift */; };
@@ -23,17 +29,25 @@
 		C035AD722AFC8F3F0021D02D /* WaterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035AD712AFC8F3F0021D02D /* WaterData.swift */; };
 		C035AD752AFC92150021D02D /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035AD742AFC92150021D02D /* DateHelper.swift */; };
 		C035AD772AFC9EA60021D02D /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035AD762AFC9EA60021D02D /* ProgressCircle.swift */; };
+		C08BA5442B4B9B1A00C31226 /* PairCalculationGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08BA5432B4B9B1A00C31226 /* PairCalculationGoal.swift */; };
+		C09D889A2B4E560E008218E1 /* WaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09D88992B4E560E008218E1 /* WaterWave.swift */; };
 		C0CEA7112B0722A400BC5E95 /* HealthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CEA7102B0722A400BC5E95 /* HealthModel.swift */; };
-		C0D126F32AFDF0970091FB88 /* AiDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D126F22AFDF0970091FB88 /* AiDetectionView.swift */; };
+		C0D126F32AFDF0970091FB88 /* CalculationGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D126F22AFDF0970091FB88 /* CalculationGoalView.swift */; };
 		C0D126F52AFDF0AF0091FB88 /* CustomIntakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D126F42AFDF0AF0091FB88 /* CustomIntakeView.swift */; };
 		C0DF1A2B2AFF35E500C82791 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DF1A2A2AFF35E500C82791 /* Constants.swift */; };
 		C0DF1A2D2AFF37F300C82791 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DF1A2C2AFF37F300C82791 /* CustomButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C000C7D52B22D25500E04AF0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		C00A3CC32B0C5D8000626067 /* NerkoOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NerkoOne-Regular.ttf"; sourceTree = "<group>"; };
 		C00A3CC72B0C5DB900626067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C00A3CCA2B0C620300626067 /* LaBelleAurore-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LaBelleAurore-Regular.ttf"; sourceTree = "<group>"; };
+		C01032822B21A8BA006DF1A1 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		C01032842B21A8C2006DF1A1 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
+		C01032862B21A8CC006DF1A1 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		C01032882B21A8D5006DF1A1 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		C01B2B782B3BD015008D4D79 /* ListRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRows.swift; sourceTree = "<group>"; };
 		C033D09A2B032400004061D7 /* HydrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationModel.swift; sourceTree = "<group>"; };
 		C035AD4F2AFC8E450021D02D /* WaterReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C035AD522AFC8E450021D02D /* WaterReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderApp.swift; sourceTree = "<group>"; };
@@ -50,8 +64,10 @@
 		C035AD742AFC92150021D02D /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		C035AD762AFC9EA60021D02D /* ProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
 		C06B99E52B0B0AB4002CD9A4 /* WaterReminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaterReminder.entitlements; sourceTree = "<group>"; };
+		C08BA5432B4B9B1A00C31226 /* PairCalculationGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairCalculationGoal.swift; sourceTree = "<group>"; };
+		C09D88992B4E560E008218E1 /* WaterWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWave.swift; sourceTree = "<group>"; };
 		C0CEA7102B0722A400BC5E95 /* HealthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthModel.swift; sourceTree = "<group>"; };
-		C0D126F22AFDF0970091FB88 /* AiDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiDetectionView.swift; sourceTree = "<group>"; };
+		C0D126F22AFDF0970091FB88 /* CalculationGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationGoalView.swift; sourceTree = "<group>"; };
 		C0D126F42AFDF0AF0091FB88 /* CustomIntakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIntakeView.swift; sourceTree = "<group>"; };
 		C0DF1A2A2AFF35E500C82791 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C0DF1A2C2AFF37F300C82791 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
@@ -68,11 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C01032812B21A880006DF1A1 /* CalculationGoal */ = {
+			isa = PBXGroup;
+			children = (
+				C01032822B21A8BA006DF1A1 /* GenderView.swift */,
+				C01032842B21A8C2006DF1A1 /* WeightView.swift */,
+				C01032862B21A8CC006DF1A1 /* ActivityView.swift */,
+				C01032882B21A8D5006DF1A1 /* WeatherView.swift */,
+				C000C7D52B22D25500E04AF0 /* Weather.swift */,
+				C01B2B782B3BD015008D4D79 /* ListRows.swift */,
+			);
+			path = CalculationGoal;
+			sourceTree = "<group>";
+		};
 		C035AD462AFC8E450021D02D = {
 			isa = PBXGroup;
 			children = (
-				C0CEA70F2B07229500BC5E95 /* Health */,
 				C035AD512AFC8E450021D02D /* WaterReminder */,
+				C0CEA70F2B07229500BC5E95 /* Health */,
 				C035AD622AFC8E790021D02D /* Model */,
 				C035AD602AFC8E670021D02D /* Views */,
 				C035AD612AFC8E6E0021D02D /* ViewModel */,
@@ -112,18 +141,12 @@
 		C035AD602AFC8E670021D02D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C035AD542AFC8E450021D02D /* ContentView.swift */,
-				C035AD632AFC8E8B0021D02D /* TodayView.swift */,
-				C035AD652AFC8EA10021D02D /* AddIntakeCircle.swift */,
-				C035AD672AFC8EB10021D02D /* DrinkView.swift */,
-				C035AD692AFC8EC40021D02D /* AddIntakeView.swift */,
-				C035AD6B2AFC8EE00021D02D /* SettingsView.swift */,
-				C035AD6D2AFC8EE90021D02D /* InfoView.swift */,
-				C035AD762AFC9EA60021D02D /* ProgressCircle.swift */,
-				C0D126F22AFDF0970091FB88 /* AiDetectionView.swift */,
+				C0D85FF12B2FFFD200C1DACB /* LogHealthView */,
+				C0D85FEF2B2FFF5900C1DACB /* MainView */,
+				C0D85FF02B2FFFAE00C1DACB /* AddIntakeGestureView */,
+				C063A1F32B16F435004C3823 /* InformationView */,
 				C0D126F42AFDF0AF0091FB88 /* CustomIntakeView.swift */,
-				C00A3CCA2B0C620300626067 /* LaBelleAurore-Regular.ttf */,
-				C00A3CC32B0C5D8000626067 /* NerkoOne-Regular.ttf */,
+				C0D85FF22B30002600C1DACB /* Fonts */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				C035AD712AFC8F3F0021D02D /* WaterData.swift */,
+				C08BA5432B4B9B1A00C31226 /* PairCalculationGoal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,12 +178,60 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C063A1F32B16F435004C3823 /* InformationView */ = {
+			isa = PBXGroup;
+			children = (
+				C0D126F22AFDF0970091FB88 /* CalculationGoalView.swift */,
+				C035AD6D2AFC8EE90021D02D /* InfoView.swift */,
+				C01032812B21A880006DF1A1 /* CalculationGoal */,
+			);
+			path = InformationView;
+			sourceTree = "<group>";
+		};
 		C0CEA70F2B07229500BC5E95 /* Health */ = {
 			isa = PBXGroup;
 			children = (
 				C0CEA7102B0722A400BC5E95 /* HealthModel.swift */,
 			);
 			path = Health;
+			sourceTree = "<group>";
+		};
+		C0D85FEF2B2FFF5900C1DACB /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				C035AD542AFC8E450021D02D /* ContentView.swift */,
+				C035AD632AFC8E8B0021D02D /* TodayView.swift */,
+				C035AD672AFC8EB10021D02D /* DrinkView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		C0D85FF02B2FFFAE00C1DACB /* AddIntakeGestureView */ = {
+			isa = PBXGroup;
+			children = (
+				C035AD652AFC8EA10021D02D /* AddIntakeCircle.swift */,
+				C035AD692AFC8EC40021D02D /* AddIntakeView.swift */,
+				C035AD762AFC9EA60021D02D /* ProgressCircle.swift */,
+				C09D88992B4E560E008218E1 /* WaterWave.swift */,
+			);
+			path = AddIntakeGestureView;
+			sourceTree = "<group>";
+		};
+		C0D85FF12B2FFFD200C1DACB /* LogHealthView */ = {
+			isa = PBXGroup;
+			children = (
+				C035AD6B2AFC8EE00021D02D /* SettingsView.swift */,
+			);
+			path = LogHealthView;
+			sourceTree = "<group>";
+		};
+		C0D85FF22B30002600C1DACB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C00A3CCA2B0C620300626067 /* LaBelleAurore-Regular.ttf */,
+				C00A3CC32B0C5D8000626067 /* NerkoOne-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,14 +306,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C000C7D62B22D25500E04AF0 /* Weather.swift in Sources */,
 				C0CEA7112B0722A400BC5E95 /* HealthModel.swift in Sources */,
-				C0D126F32AFDF0970091FB88 /* AiDetectionView.swift in Sources */,
+				C0D126F32AFDF0970091FB88 /* CalculationGoalView.swift in Sources */,
 				C035AD6E2AFC8EE90021D02D /* InfoView.swift in Sources */,
 				C033D09B2B032400004061D7 /* HydrationModel.swift in Sources */,
+				C01032832B21A8BA006DF1A1 /* GenderView.swift in Sources */,
 				C0D126F52AFDF0AF0091FB88 /* CustomIntakeView.swift in Sources */,
 				C035AD6C2AFC8EE00021D02D /* SettingsView.swift in Sources */,
 				C0DF1A2D2AFF37F300C82791 /* CustomButtons.swift in Sources */,
+				C09D889A2B4E560E008218E1 /* WaterWave.swift in Sources */,
 				C035AD6A2AFC8EC40021D02D /* AddIntakeView.swift in Sources */,
+				C08BA5442B4B9B1A00C31226 /* PairCalculationGoal.swift in Sources */,
+				C01032852B21A8C2006DF1A1 /* WeightView.swift in Sources */,
+				C01032892B21A8D5006DF1A1 /* WeatherView.swift in Sources */,
+				C01B2B792B3BD015008D4D79 /* ListRows.swift in Sources */,
+				C01032872B21A8CC006DF1A1 /* ActivityView.swift in Sources */,
 				C035AD722AFC8F3F0021D02D /* WaterData.swift in Sources */,
 				C035AD552AFC8E450021D02D /* ContentView.swift in Sources */,
 				C035AD642AFC8E8B0021D02D /* TodayView.swift in Sources */,

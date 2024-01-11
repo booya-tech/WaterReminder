@@ -10,14 +10,16 @@ import SwiftUI
 struct ProgressCircle: View {
     @State var sliderHeight: CGFloat = 0
     
+    // complete property to display the circular progress's color.
     var complete: Bool
+    // progress property to display the circular progress's value.
     var progress: Double
 
     var body: some View {
 
         ZStack {
             
-            // If intakeValue has been completed, simply display a green circle
+            // If intakeValue has been completed, simply display a light green circle
             if complete {
                 Circle()
                     .stroke(lineWidth: 20.0)
@@ -48,9 +50,8 @@ struct ProgressCircle: View {
             
             // Data and graphics within the circle
             VStack(spacing: 0) {
-                // let str = NSString(format:"%d , %f, %ld, %@", INT_VALUE, FLOAT_VALUE, LONG_VALUE, STRING_VALUE)
                 HStack {
-                    // max 100% by 1.0 progressValue
+                    // max 100% by 1.0 progress
                     Text(String(format: "%.0f%%", min(self.progress, 1.0) * 100.0))
                         .font(Font.custom("NerkoOne-Regular", size: 36))
                         .bold()
