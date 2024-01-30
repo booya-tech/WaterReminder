@@ -130,7 +130,6 @@ class HydrationModel: ObservableObject {
     
     // Calls updateTotal and updateProgress
     private func updateData() {
-        //        self.goal = self.goalIndex * Constants.Config.goalIncrement + Constants.Config.baseGoal
         self.updateTotal()
         self.updateProgress()
     }

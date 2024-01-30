@@ -22,6 +22,8 @@ struct TodayView: View {
     // Display information view
     @State var infoSheet = false
     
+//    @Binding var lastDragValue: CGFloat
+    
     var body: some View {
         
         NavigationStack(path: $path) {

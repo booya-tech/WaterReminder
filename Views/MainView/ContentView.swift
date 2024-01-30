@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
     // Application uses 2 models
     private var health: HealthModel
     private var hydration: HydrationModel
-    
     init() {
         health = HealthModel()
         hydration = HydrationModel(healthModel: health)
@@ -26,6 +26,8 @@ struct ContentView: View {
                         print("Access not granted")
                     }
                 }
+                
+                NotificationManager.instance.requestAutorization()
                 
             }
     }

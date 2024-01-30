@@ -14,6 +14,7 @@ struct AddIntakeView: View {
     
 //    @Binding var addIntakeCircle: AddIntakeCircle
     @State var intakeValue: CGFloat = 0.1
+//    @Binding var lastDragValue: CGFloat
     
     // presentationMode property used to close the sheet
     @Environment(\.presentationMode) var presentationMode
